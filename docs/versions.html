@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Versions — Kodama</title>
+<meta name="description" content="Ce que chaque version de Kodama a apporté.">
+<link rel="icon" href="images/icone.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="contenu">
+<nav class="retour"><a href="index.html">← Kodama</a></nav>
+
+<header style="text-align:left; padding:32px 0 8px;">
+    <h1 style="font-size:38px;">Versions</h1>
+</header>
+
+<section style="border-top:none; padding-top:8px;">
+    <p>
+        Chaque version télécharge et installe la suivante d'elle-même. Les archives de toutes
+        les versions restent disponibles sur
+        <a href="https://github.com/snouhaud/kodama/releases">GitHub</a>.
+    </p>
+</section>
+
+<section>
+    <h2>1.0</h2>
+<p>La première version que j'assume comme finie.</p>
+<ul>
+    <li><strong>Chercher une radio parmi cinquante-huit mille.</strong> Kodama interroge
+    l'annuaire public <a href="https://www.radio-browser.info">radio-browser.info</a>, par nom,
+    par pays ou par genre. Un bouton par résultat interroge la station elle-même et dit si elle
+    diffuse ses titres — donc si Kodama saura l'enregistrer. L'annuaire, lui, ne le sait pas.</li>
+
+    <li><strong>La détection des radios enregistrables est bien plus sûre.</strong> Elle lit
+    désormais le flux jusqu'à obtenir un vrai titre, au lieu de se fier à un en-tête : sur seize
+    stations tirées de l'annuaire, trois l'annonçaient sans jamais rien envoyer.</li>
+
+    <li><strong>Couper l'enregistrement d'une radio en particulier</strong>, depuis sa fiche.
+    Pour les cas que la détection ne peut pas voir — une station qui annonce un titre sans
+    jamais en changer.</li>
+
+    <li><strong>La file d'attente s'efface</strong> quand la radio écoutée ne produira aucun
+    morceau, plutôt que de rester vide sans explication.</li>
+
+    <li><strong>Les mises à jour disent enfin ce qu'elles apportent</strong> : cette fenêtre
+    même, qui était vide jusqu'ici.</li>
+</ul>
+<p>
+    Correction : modifier une radio à l'arrêt puis la relancer rejouait l'ancienne version,
+    réglage d'enregistrement compris.
+</p>
+</section>
+
+<section>
+    <h2>0.10</h2>
+<ul>
+    <li><strong>Démarrage automatique.</strong> Kodama peut désormais se lancer à l'ouverture de
+    session, depuis les Réglages. Elle se pose alors dans la barre des menus sans rien jouer.</li>
+</ul>
+<p>L'interrupteur lit l'état réel tenu par macOS plutôt qu'une copie : le désactiver depuis
+Réglages système → Général → Ouverture se voit aussitôt dans Kodama.</p>
+</section>
+
+<section>
+    <h2>0.9</h2>
+<p>La première version publiée.</p>
+<ul>
+    <li><strong>Dix radios pour commencer</strong>, installées au premier lancement — ambient,
+    chillout, electro, downtempo. Toutes diffusent leurs titres, donc l'enregistrement y
+    fonctionne.</li>
+    <li><strong>Mises à jour automatiques.</strong> Kodama vous prévient des nouvelles versions
+    et les installe.</li>
+    <li><strong>Interface en français et en anglais</strong>, selon la langue du système.</li>
+    <li><strong>Agent utilisateur réglable</strong> : certaines stations n'ouvrent leur flux
+    qu'à un agent qu'elles reconnaissent.</li>
+</ul>
+<p>Binaire universel, Apple silicon et Intel. Signée et notarisée par Apple.</p>
+</section>
+
+</div>
+
+<footer>
+    <p><a href="https://snouhaud.github.io">Steve Octets</a></p>
+    <p><a href="index.html">Kodama</a><a href="guide.html">Guide</a><a href="https://github.com/snouhaud/kodama/issues">Support</a></p>
+</footer>
+
+</body>
+</html>

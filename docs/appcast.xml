@@ -3,6 +3,67 @@
     <channel>
         <title>Kodama</title>
         <item>
+            <title>1.0</title>
+            <pubDate>Sun, 30 Aug 2026 21:36:56 +0200</pubDate>
+            <sparkle:version>28</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+<p>The first version I consider finished.</p>
+<ul>
+    <li><strong>Search fifty-eight thousand stations.</strong> Kodama queries the public
+    <a href="https://www.radio-browser.info">radio-browser.info</a> directory, by name, country
+    or genre. A button on each result asks the station itself whether it broadcasts track
+    titles — and therefore whether Kodama can record it. The directory does not know.</li>
+
+    <li><strong>Far more reliable detection of recordable stations.</strong> Kodama now reads the
+    stream until a real title arrives, instead of trusting a header: of sixteen stations drawn
+    from the directory, three announced one and never sent anything.</li>
+
+    <li><strong>Turn recording off for one station</strong>, from its own panel. For the cases
+    detection cannot catch — a station that announces a title but never changes it.</li>
+
+    <li><strong>The pending queue disappears</strong> when the station being played will produce
+    no tracks, rather than sitting there empty without explanation.</li>
+
+    <li><strong>Updates finally say what they bring</strong>: this very window, which was empty
+    until now.</li>
+</ul>
+<p>
+    Fixed: editing a stopped station and starting it again replayed the previous version,
+    recording setting included.
+</p>
+            ]]></description>
+            <description xml:lang="fr"><![CDATA[
+<p>La première version que j'assume comme finie.</p>
+<ul>
+    <li><strong>Chercher une radio parmi cinquante-huit mille.</strong> Kodama interroge
+    l'annuaire public <a href="https://www.radio-browser.info">radio-browser.info</a>, par nom,
+    par pays ou par genre. Un bouton par résultat interroge la station elle-même et dit si elle
+    diffuse ses titres — donc si Kodama saura l'enregistrer. L'annuaire, lui, ne le sait pas.</li>
+
+    <li><strong>La détection des radios enregistrables est bien plus sûre.</strong> Elle lit
+    désormais le flux jusqu'à obtenir un vrai titre, au lieu de se fier à un en-tête : sur seize
+    stations tirées de l'annuaire, trois l'annonçaient sans jamais rien envoyer.</li>
+
+    <li><strong>Couper l'enregistrement d'une radio en particulier</strong>, depuis sa fiche.
+    Pour les cas que la détection ne peut pas voir — une station qui annonce un titre sans
+    jamais en changer.</li>
+
+    <li><strong>La file d'attente s'efface</strong> quand la radio écoutée ne produira aucun
+    morceau, plutôt que de rester vide sans explication.</li>
+
+    <li><strong>Les mises à jour disent enfin ce qu'elles apportent</strong> : cette fenêtre
+    même, qui était vide jusqu'ici.</li>
+</ul>
+<p>
+    Correction : modifier une radio à l'arrêt puis la relancer rejouait l'ancienne version,
+    réglage d'enregistrement compris.
+</p>
+            ]]></description>
+            <enclosure url="https://github.com/snouhaud/kodama/releases/download/v1.0/Kodama-1.0.zip" length="5186422" type="application/octet-stream" sparkle:edSignature="996ytA9eJBhgumGa0TTnd+p/b8odF4U2or588P6xrfYKDV8Jg8a62KPgAL02jhF3qdE5fPiyUoDFoh2rebpKCA=="/>
+        </item>
+        <item>
             <title>0.10</title>
             <pubDate>Sun, 30 Aug 2026 19:11:06 +0200</pubDate>
             <sparkle:version>21</sparkle:version>
