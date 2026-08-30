@@ -3,6 +3,38 @@
     <channel>
         <title>Kodama</title>
         <item>
+            <title>1.1</title>
+            <pubDate>Sun, 30 Aug 2026 23:40:56 +0200</pubDate>
+            <sparkle:version>30</sparkle:version>
+            <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+<p>Steve Octets now has an address of its own.</p>
+<ul>
+    <li><strong>The site has moved</strong> to
+    <a href="https://steveoctets.github.io/kodama/">steveoctets.github.io</a>, and this is the
+    first release to look there for updates. Earlier copies keep querying the old address,
+    which is kept alive for them: nobody is left behind.</li>
+
+    <li><strong>An “About” entry</strong> in the menu, giving the installed version and a link
+    to the site.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="fr"><![CDATA[
+<p>Steve Octets a désormais une adresse à lui.</p>
+<ul>
+    <li><strong>Le site déménage</strong> vers
+    <a href="https://steveoctets.github.io/kodama/">steveoctets.github.io</a>, et cette
+    version est la première à y chercher ses mises à jour. Les copies antérieures continuent
+    d'interroger l'ancienne adresse, maintenue pour elles : personne ne reste en arrière.</li>
+
+    <li><strong>Un « À propos »</strong> dans le menu, qui dit la version installée et mène
+    au site.</li>
+</ul>
+            ]]></description>
+            <enclosure url="https://github.com/steveoctets/kodama/releases/download/v1.1/Kodama-1.1.zip" length="5194588" type="application/octet-stream" sparkle:edSignature="s4flkqmNNq3Z5Ff5s39cVvGZolszHu/pZO/vvXVvBwAq55B/wW1YMvdQ8kyhy3hhj7nIq0keqk9+WJlQS3BnAw=="/>
+        </item>
+        <item>
             <title>1.0</title>
             <pubDate>Sun, 30 Aug 2026 21:36:56 +0200</pubDate>
             <sparkle:version>28</sparkle:version>
