@@ -25,6 +25,7 @@
         macOS 14 ou plus récent · Apple silicon et Intel · 4,7 Mo<br>
         Signée et notarisée par Apple
     </p>
+    <p class="dessous compteur" id="compteur" hidden></p>
 </header>
 
 <div class="contenu">
@@ -129,6 +130,24 @@
         <a href="guide.html">Guide</a>
     </p>
 </footer>
+
+<script>
+// Le nombre de téléchargements, demandé à GitHub. En cas d'échec — hors ligne,
+// quota d'appels dépassé — on n'affiche rien : mieux vaut un silence qu'un
+// message d'erreur sur une page de présentation.
+fetch('https://api.github.com/repos/snouhaud/kodama/releases')
+    .then(reponse => reponse.ok ? reponse.json() : Promise.reject())
+    .then(versions => {
+        const total = versions.reduce((somme, version) =>
+            somme + version.assets.reduce((n, fichier) => n + fichier.download_count, 0), 0);
+        if (total < 1) return;
+        const element = document.getElementById('compteur');
+        element.textContent = total.toLocaleString('fr-FR')
+            + (total > 1 ? ' téléchargements' : ' téléchargement');
+        element.hidden = false;
+    })
+    .catch(() => {});
+</script>
 
 </body>
 </html>

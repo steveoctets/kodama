@@ -101,3 +101,6 @@ footer {
 footer a { margin: 0 10px; }
 
 nav.retour { padding-top: 28px; font-size: 15px; }
+
+/* Le compteur de téléchargements : présent, mais qui ne réclame pas l'attention. */
+.compteur { margin-top: 6px; opacity: .75; }
