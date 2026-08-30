@@ -8,6 +8,22 @@
             <sparkle:version>21</sparkle:version>
             <sparkle:shortVersionString>0.10</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+<ul>
+    <li><strong>Launch at login.</strong> Kodama can now start when you log in, from its
+    Settings. It sits in the menu bar, playing nothing.</li>
+</ul>
+<p>The switch reads the actual state held by macOS rather than a copy of it: turning Kodama off
+from System Settings → General → Login Items shows up straight away in the app.</p>
+            ]]></description>
+            <description xml:lang="fr"><![CDATA[
+<ul>
+    <li><strong>Démarrage automatique.</strong> Kodama peut désormais se lancer à l'ouverture de
+    session, depuis les Réglages. Elle se pose alors dans la barre des menus sans rien jouer.</li>
+</ul>
+<p>L'interrupteur lit l'état réel tenu par macOS plutôt qu'une copie : le désactiver depuis
+Réglages système → Général → Ouverture se voit aussitôt dans Kodama.</p>
+            ]]></description>
             <enclosure url="https://github.com/snouhaud/kodama/releases/download/v0.10/Kodama-0.10.zip" length="4969700" type="application/octet-stream" sparkle:edSignature="AycHOvbRIo/Cuh0df9Y6DGgg82KHKebC9KfnwbKCKJ82tr7leEA8XuCxqCH+QgI4Rc8UpLU5k7TvSk1fxZirDg=="/>
         </item>
     </channel>
