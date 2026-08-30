@@ -118,6 +118,12 @@ figure img.etroite {
     max-width: 300px; margin: 0 auto;
 }
 
+/* Une capture prise en résolution logique : l'étirer la rendrait floue. Elle
+   s'affiche à sa taille, et ne rétrécit que si la fenêtre l'exige. */
+figure img.native {
+    width: auto; max-width: 100%; margin: 0 auto;
+}
+
 /* Un bouton de second rang : présent sans concurrencer le téléchargement. */
 .bouton-second {
     display: inline-block; margin: 4px 10px 4px 0; padding: 9px 20px;
