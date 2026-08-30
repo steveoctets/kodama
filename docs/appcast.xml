@@ -3,12 +3,12 @@
     <channel>
         <title>Kodama</title>
         <item>
-            <title>0.9</title>
-            <pubDate>Sun, 30 Aug 2026 16:47:15 +0200</pubDate>
-            <sparkle:version>16</sparkle:version>
-            <sparkle:shortVersionString>0.9</sparkle:shortVersionString>
+            <title>0.10</title>
+            <pubDate>Sun, 30 Aug 2026 19:11:06 +0200</pubDate>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:shortVersionString>0.10</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/snouhaud/kodama/releases/download/v0.9/Kodama-0.9.zip" length="4960827" type="application/octet-stream" sparkle:edSignature="U4Icd8i7opl6PvoiRSPRmHDq18g8nCsI1h+cdA6H5WsWRqBStxBk687WQWvMRDUEGZeG9UHqQp/Amx5bKoQcDQ=="/>
+            <enclosure url="https://github.com/snouhaud/kodama/releases/download/v0.10/Kodama-0.10.zip" length="4969700" type="application/octet-stream" sparkle:edSignature="AycHOvbRIo/Cuh0df9Y6DGgg82KHKebC9KfnwbKCKJ82tr7leEA8XuCxqCH+QgI4Rc8UpLU5k7TvSk1fxZirDg=="/>
         </item>
     </channel>
 </rss>
