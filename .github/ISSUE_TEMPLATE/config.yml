@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://snouhaud.github.io/kodama/guide.html
+    about: Ajouter une station, régler le découpage, retrouver ses fichiers.
+  - name: Les limites connues
+    url: https://snouhaud.github.io/kodama/#limites
+    about: Radios sans titres, flux HLS, Chromecast — ce que Kodama ne fait pas, et pourquoi.

@@ -117,3 +117,12 @@ nav.retour { padding-top: 28px; font-size: 15px; }
 figure img.etroite {
     max-width: 300px; margin: 0 auto;
 }
+
+/* Un bouton de second rang : présent sans concurrencer le téléchargement. */
+.bouton-second {
+    display: inline-block; margin: 4px 10px 4px 0; padding: 9px 20px;
+    border: 1px solid var(--vert-clair); border-radius: 10px;
+    color: var(--vert-clair); text-decoration: none; font-size: 16px;
+    transition: background .12s ease, color .12s ease;
+}
+.bouton-second:hover { background: var(--vert-clair); color: var(--fond-carte); }

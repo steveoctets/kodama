@@ -1,0 +1,55 @@
+name: Signaler un problème
+description: Quelque chose ne fonctionne pas comme prévu.
+labels: ["problème"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de prendre le temps. Les questions ci-dessous évitent les
+        allers-retours — répondez à ce que vous savez, laissez le reste.
+
+        *English is welcome too.*
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Ce qui se passe
+      description: Et ce que vous attendiez à la place.
+      placeholder: |
+        Exemple : la lecture s'arrête au bout de quelques minutes sur une
+        station, alors qu'elle tient sur les autres.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version de Kodama
+      description: Menu de la barre des menus, puis « Rechercher les mises à jour… » — ou le nom du fichier téléchargé.
+      placeholder: "0.9"
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: Version de macOS
+      description: Menu Pomme, « À propos de ce Mac ».
+      placeholder: "15.2, Apple silicon"
+
+  - type: input
+    id: station
+    attributes:
+      label: Station concernée
+      description: Son nom, et son adresse de flux si vous l'avez ajoutée vous-même. Beaucoup de problèmes tiennent à la station plutôt qu'à l'application.
+      placeholder: "Drone Zone — https://ice6.somafm.com/dronezone-128-mp3"
+
+  - type: textarea
+    id: reproduire
+    attributes:
+      label: Comment le reproduire
+      description: Les gestes, dans l'ordre. Un problème qu'on sait reprovoquer est à moitié résolu.
+      placeholder: |
+        1. Lancer telle station
+        2. Attendre trois minutes
+        3. …
