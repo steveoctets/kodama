@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kodama — un magnétophone de radio pour macOS</title>
+<meta name="description" content="Kodama écoute vos radios web depuis la barre des menus, découpe le flux en morceaux au fil des titres, et vous demande quoi garder.">
+<link rel="icon" href="images/icone.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img class="icone" src="images/icone.png" alt="L'icône de Kodama : le hiragana ko, prolongé par des ondes">
+    <h1>Kodama</h1>
+    <p class="kana">こだま — « écho »</p>
+    <p class="accroche">
+        Un magnétophone de radio pour la barre des menus de macOS. Il écoute vos stations,
+        découpe le flux en morceaux au fil des changements de titre, et vous demande quoi garder.
+    </p>
+    <a class="telecharger" href="https://github.com/snouhaud/kodama/releases/latest/download/Kodama-0.9.zip">
+        Télécharger Kodama 0.9
+    </a>
+    <p class="dessous">
+        macOS 14 ou plus récent · Apple silicon et Intel · 4,7 Mo<br>
+        Signée et notarisée par Apple
+    </p>
+</header>
+
+<div class="contenu">
+
+<section>
+    <div class="trois">
+        <div>
+            <h3>Dans la barre des menus</h3>
+            <p>Ce qui joue, la liste des stations, un clic pour écouter. Les touches
+            média du clavier changent de station.</p>
+        </div>
+        <div>
+            <h3>Une coupe juste</h3>
+            <p>Le titre arrive dans le flux à l'endroit même où le morceau commence.
+            La coupe tombe sur une frontière de trame — sans décalage à corriger.</p>
+        </div>
+        <div>
+            <h3>Vous tranchez</h3>
+            <p>Chaque morceau enregistré vous est proposé par une notification.
+            Garder, ou jeter. Rien ne s'accumule sans votre accord.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Ce qui se passe pendant l'écoute</h2>
+    <figure>
+        <img src="images/fenetre.jpg" alt="La fenêtre de Kodama : les stations à gauche, le lecteur à droite avec la pochette, le titre en cours et le minuteur d'enregistrement">
+        <figcaption>Les stations à gauche, le lecteur à droite — pochette, titre, minuteur d'enregistrement et notation.</figcaption>
+    </figure>
+    <p>
+        Le flux est lu une seule fois, et les octets reçus partent tels quels sur le disque :
+        aucun réencodage, donc la qualité exacte de la station. Les fichiers portent une
+        pochette — celle que la station annonce, ou l'image que vous avez donnée à la radio.
+    </p>
+    <p>
+        Les morceaux se notent de une à cinq étoiles, pendant l'écoute ou après coup.
+        La note part dans le fichier lui-même.
+    </p>
+</section>
+
+<section>
+    <h2>Tout se pilote depuis la barre des menus</h2>
+    <figure>
+        <img src="images/menulet.jpg" alt="Le menu de Kodama déroulé, montrant le titre en cours et la liste des stations">
+        <figcaption>Kodama n'occupe pas le Dock. Il attend dans la barre des menus.</figcaption>
+    </figure>
+</section>
+
+<section>
+    <h2>Dix stations pour commencer</h2>
+    <p>
+        Kodama arrive avec dix radios choisies pour l'écoute de fond — ambient, chillout,
+        electro, downtempo — toutes chez <a href="https://somafm.com">SomaFM</a>,
+        indépendante et sans publicité.
+    </p>
+    <p>
+        Elles ont un point commun qui n'a rien d'esthétique : <strong>elles diffusent toutes
+        leurs titres</strong>. Une radio qui n'annonce rien s'écoute très bien, mais ne
+        s'enregistre pas — et cela ne se voit qu'à l'usage. Vous pouvez évidemment ajouter
+        les vôtres.
+    </p>
+</section>
+
+<section>
+    <h2>Ce que vous réglez</h2>
+    <figure>
+        <img src="images/reglages.jpg" alt="Les réglages de Kodama : l'enregistrement, et les durées minimale et maximale de découpage">
+        <figcaption>En deçà de la durée minimale, c'est un jingle : le morceau est jeté.</figcaption>
+    </figure>
+    <p>
+        Les seuils de découpage, le dossier où vont les morceaux gardés, la durée de
+        conservation de la file, les notifications. Kodama peut aussi ne faire que jouer
+        la radio, sans rien enregistrer.
+    </p>
+</section>
+
+<section>
+    <h2>Vos fichiers vous appartiennent</h2>
+    <p>
+        Le dossier <em>est</em> la base : aucun index à côté, les métadonnées vivent dans les
+        étiquettes des fichiers, et tout se manipule au Finder. Rien n'est envoyé nulle part,
+        aucun compte n'est demandé.
+    </p>
+    <div class="note">
+        <p>
+            <strong>Ce que Kodama ne fait pas.</strong> Les radios qui n'annoncent pas leurs
+            titres s'écoutent mais ne s'enregistrent pas — Radio France par exemple. Les flux
+            HLS ne sont pas pris en charge : MP3 et AAC seulement. Pas de Chromecast, AirPlay
+            le remplace.
+        </p>
+    </div>
+    <p><a href="guide.html">Lire le guide →</a></p>
+</section>
+
+</div>
+
+<footer>
+    <p>© 2026 SteveOctets</p>
+    <p>
+        <a href="https://github.com/snouhaud/kodama/releases">Toutes les versions</a>
+        <a href="guide.html">Guide</a>
+    </p>
+</footer>
+
+</body>
+</html>

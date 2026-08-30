@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Kodama</title>
+        <item>
+            <title>0.9</title>
+            <pubDate>Sun, 30 Aug 2026 16:47:15 +0200</pubDate>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>0.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/snouhaud/kodama/releases/download/v0.9/Kodama-0.9.zip" length="4960827" type="application/octet-stream" sparkle:edSignature="U4Icd8i7opl6PvoiRSPRmHDq18g8nCsI1h+cdA6H5WsWRqBStxBk687WQWvMRDUEGZeG9UHqQp/Amx5bKoQcDQ=="/>
+        </item>
+    </channel>
+</rss>

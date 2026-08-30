@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide — Kodama</title>
+<meta name="description" content="Comment utiliser Kodama : ajouter une radio, régler le découpage, retrouver ses fichiers.">
+<link rel="icon" href="images/icone.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="contenu">
+<nav class="retour"><a href="index.html">← Kodama</a></nav>
+
+<header style="text-align:left; padding:32px 0 8px;">
+    <h1 style="font-size:38px;">Guide</h1>
+</header>
+
+<section style="border-top:none; padding-top:8px;">
+    <h2>Installer</h2>
+    <p>
+        Décompressez l'archive, glissez <code>Kodama.app</code> dans votre dossier
+        Applications, puis ouvrez-la. L'application est signée et notarisée par Apple :
+        elle démarre sans avertissement.
+    </p>
+    <p>
+        Kodama n'apparaît pas dans le Dock. Cherchez son icône dans la barre des menus,
+        en haut à droite de l'écran. Au premier lancement, dix stations sont installées.
+    </p>
+</section>
+
+<section>
+    <h2>Écouter</h2>
+    <p>
+        Cliquez sur l'icône, puis sur une station. Un second clic l'arrête. La pastille
+        indique celle qui joue.
+    </p>
+    <p>
+        Les touches média de votre clavier fonctionnent : lecture/pause arrête et relance,
+        <strong>suivant et précédent changent de station</strong> — passer au morceau
+        suivant n'aurait pas de sens sur un direct. L'ordre suivi est celui de la grille,
+        que vous pouvez réarranger en glissant les vignettes.
+    </p>
+</section>
+
+<section>
+    <h2>Ajouter une radio</h2>
+    <p>
+        Dans la fenêtre principale, le bouton <strong>+</strong>. Collez l'adresse du flux,
+        ou un lien <code>.pls</code> ou <code>.m3u</code> — Kodama le suit tout seul.
+        Vous pouvez donner un nom et une image à la station.
+    </p>
+
+    <h3>« Cette radio n'annonce pas ses titres »</h3>
+    <p>
+        Kodama sonde l'adresse avant de l'accepter, et vous prévient si la station ne
+        diffuse pas de métadonnées. C'est important : <strong>sans titre, rien n'indique où
+        couper</strong>. La station est acceptée si vous cliquez à nouveau, mais elle ne
+        fera que jouer — aucun morceau n'en sera enregistré.
+    </p>
+    <p>
+        Beaucoup de radios généralistes sont dans ce cas, Radio France notamment.
+    </p>
+</section>
+
+<section>
+    <h2>Régler le découpage</h2>
+    <p>
+        Deux seuils, dans les Réglages :
+    </p>
+    <ul>
+        <li><strong>Durée minimale</strong> (30 secondes par défaut) — en deçà, c'est un
+        jingle ou une coupure publicitaire, et le morceau est jeté sans vous déranger.</li>
+        <li><strong>Durée maximale</strong> (15 minutes) — au-delà, le morceau est clos et
+        un nouveau s'ouvre. C'est ce qui évite un fichier sans fin sur une émission qui
+        n'annonce plus rien.</li>
+    </ul>
+    <p>
+        L'enregistrement peut aussi être coupé entièrement : Kodama se contente alors de
+        jouer la radio.
+    </p>
+</section>
+
+<section>
+    <h2>Trancher</h2>
+    <p>
+        Chaque morceau enregistré vous est proposé par une notification, avec sa pochette :
+        <strong>Garder</strong> ou <strong>Jeter</strong>, sans ouvrir de fenêtre. Si vous
+        laissez passer, le morceau reste dans la file d'attente.
+    </p>
+    <p>
+        La fenêtre <strong>Enregistrements</strong> montre toute la file sur une grande
+        surface, groupée par station, pour trancher en bloc. On peut y sélectionner
+        plusieurs morceaux à la fois.
+    </p>
+    <p>
+        Les morceaux non tranchés disparaissent au bout de sept jours, ou quand la file
+        dépasse deux gigaoctets. <strong>Ceux que vous avez gardés ne sont jamais
+        effacés.</strong>
+    </p>
+</section>
+
+<section>
+    <h2>Noter un morceau</h2>
+    <p>
+        De une à cinq étoiles, pendant l'écoute depuis le panneau lecteur, ou après coup
+        dans la fenêtre Enregistrements. Recliquer sur l'étoile courante efface la note.
+    </p>
+    <p>
+        La note est écrite <em>dans le fichier</em>, et se retrouve dans la plupart des
+        lecteurs — foobar2000, MusicBee, Kodi, Plex. Musique d'Apple ignore ce champ :
+        Kodama écrit donc aussi la note en toutes lettres dans les Commentaires, où elle
+        reste visible.
+    </p>
+</section>
+
+<section>
+    <h2>Où sont les fichiers</h2>
+    <p>
+        Dans <code>~/Library/Application Support/Kodama/</code> : les stations en clair,
+        leurs images, la file d'attente. Les morceaux gardés vont dans le dossier de votre
+        choix, réglable — changer ce dossier ne déplace pas ce qui s'y trouve déjà.
+    </p>
+    <p>
+        Aucun index, aucune base de données : le dossier <em>est</em> la bibliothèque.
+        Déplacez, renommez ou supprimez au Finder, Kodama relira le dossier.
+    </p>
+</section>
+
+<section>
+    <h2>Emporter ses stations</h2>
+    <p>
+        Le menu propose d'exporter vos stations dans un fichier <code>.kodama</code> — un
+        JSON qui embarque aussi les images. À l'import, vous choisissez d'ajouter à votre
+        liste ou de la remplacer. Les doublons sont écartés.
+    </p>
+</section>
+
+<section>
+    <h2>Mises à jour</h2>
+    <p>
+        Kodama vérifie les nouvelles versions et vous propose de les installer.
+        « Rechercher les mises à jour… » dans le menu force une vérification immédiate.
+    </p>
+</section>
+
+</div>
+
+<footer>
+    <p>© 2026 SteveOctets</p>
+    <p><a href="index.html">Kodama</a><a href="https://github.com/snouhaud/kodama/releases">Toutes les versions</a></p>
+</footer>
+
+</body>
+</html>
