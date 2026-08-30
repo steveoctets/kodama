@@ -1,6 +1,6 @@
 # Kodama
 
-Un magnétophone de radio pour la barre des menus de macOS.
+Une application de streaming de Web Radio pour la barre des menus de macOS.
 
 **[Télécharger la dernière version](https://github.com/snouhaud/kodama/releases/latest)** ·
 **[Site et documentation](https://snouhaud.github.io/kodama/)**
