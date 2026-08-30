@@ -104,3 +104,16 @@ nav.retour { padding-top: 28px; font-size: 15px; }
 
 /* Le compteur de téléchargements : présent, mais qui ne réclame pas l'attention. */
 .compteur { margin-top: 6px; opacity: .75; }
+
+/* Deux captures côte à côte, qui s'empilent quand la place manque. */
+.deux-colonnes {
+    display: grid; gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: start;
+}
+
+/* Une capture étroite — un menu, une palette — n'a rien à gagner à être
+   étirée sur toute la largeur : elle s'affiche à sa taille, centrée. */
+figure img.etroite {
+    max-width: 300px; margin: 0 auto;
+}
