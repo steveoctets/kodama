@@ -8,4 +8,4 @@ Un magnétophone de radio pour la barre des menus de macOS.
 Ce dépôt héberge les versions publiées, le site de présentation et le flux de mises à jour.
 Il ne contient pas le code source.
 
-© 2026 SteveOctets
+© 2026 Steve Octets
