@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide — Kodama</title>
+<meta name="description" content="How to use Kodama: adding a radio, setting the splitting, finding your files.">
+<link rel="icon" href="../images/icone.png">
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" hreflang="fr" href="https://steveoctets.github.io/kodama/guide.html">
+<link rel="alternate" hreflang="en" href="https://steveoctets.github.io/kodama/en/guide.html">
+<link rel="alternate" hreflang="x-default" href="https://steveoctets.github.io/kodama/en/guide.html">
+</head>
+<body>
+
+<div class="contenu">
+<nav class="retour"><a href="index.html">← Kodama</a></nav>
+
+<header style="text-align:left; padding:32px 0 8px;">
+    <h1 style="font-size:38px;">Guide</h1>
+</header>
+
+<section style="border-top:none; padding-top:8px;">
+    <h2>Installing</h2>
+    <p>
+        Unzip the archive, drag <code>Kodama.app</code> into your Applications folder, then
+        open it. The application is signed and notarised by Apple: it starts without a
+        warning.
+    </p>
+    <p>
+        Kodama does not appear in the Dock. Look for its icon in the menu bar, at the top
+        right of the screen. On first launch, ten stations are installed.
+    </p>
+    <p>
+        <strong>To open the main window</strong> — the one showing the radios and the player —
+        click the icon, then <strong>Kodama…</strong> at the bottom of the menu. Everything
+        else is driven from that same menu; the window is only there when you need it.
+    </p>
+    <p>
+        Shorter still: <strong>a right-click on the icon</strong> opens the window directly,
+        without going through the menu.
+    </p>
+    <p>
+        Or <strong>⌃⌥⌘R</strong>, wherever you are. That shortcut is system-wide, unlike the
+        menu's ⌘O, which only responds when a Kodama window is already in front — and a menu
+        bar application almost never has focus. It can be changed in Settings, under
+        <em>Keyboard</em>: if another application already uses the combination, whichever
+        launched first keeps it.
+    </p>
+    <p>
+        Kodama can also <strong>launch at login</strong>: the setting is in the Startup
+        section. It then settles into the menu bar without playing anything.
+    </p>
+</section>
+
+<section>
+    <h2>Playing a station</h2>
+    <p>
+        Click the icon, then a station. A second click stops it. The dot marks the one
+        playing.
+    </p>
+    <p>
+        Your keyboard's media keys work: play/pause stops and restarts, <strong>next and
+        previous change station</strong> — skipping to the next track would make no sense on a
+        live stream. The order followed is the grid's, which you can rearrange by dragging the
+        thumbnails.
+    </p>
+</section>
+
+<section>
+    <h2>Adding a radio</h2>
+    <p>
+        In the main window, the <strong>+</strong> button. Paste the stream address, or a
+        <code>.pls</code> or <code>.m3u</code> link — Kodama follows it by itself. You can give
+        the station a name and an image.
+    </p>
+
+    <h3>Searching the directory</h3>
+    <p>
+        The other path from the <strong>+</strong> button: searching
+        <a href="https://www.radio-browser.info">radio-browser.info</a>. Type a name, or simply
+        pick a country and a genre to browse — that is the only way to approach fifty-eight
+        thousand stations whose names you do not know.
+    </p>
+    <p>
+        Each result carries a <strong>Test</strong> button. It asks the station whether it
+        broadcasts its titles, and so whether Kodama will be able to record it. The directory
+        does not keep that information.
+    </p>
+    <p>
+        A station already in your list is flagged as such. Two mirrors of the same radio,
+        however, remain two separate entries: nothing lets one guess they serve the same
+        stream.
+    </p>
+
+    <h3>“This radio does not announce its titles”</h3>
+    <p>
+        Kodama probes the address before accepting it, and warns you if the station broadcasts
+        no metadata. This matters: <strong>without titles, nothing says where to cut</strong>.
+        The station is accepted if you click again, but it will only play — no track will be
+        recorded from it.
+    </p>
+    <p>
+        Many general-interest radios fall into this category.
+    </p>
+</section>
+
+<section>
+    <h2>Setting the splitting</h2>
+    <p>
+        Two thresholds, in Settings:
+    </p>
+    <ul>
+        <li><strong>Minimum duration</strong> (30 seconds by default) — below that, it is a
+        jingle or an ad break, and the track is discarded without bothering you.</li>
+        <li><strong>Maximum duration</strong> (15 minutes) — beyond that, the track is closed
+        and a new one opens. That is what avoids an endless file on a programme that stops
+        announcing anything.</li>
+    </ul>
+    <p>
+        Recording can also be turned off entirely: Kodama then just plays the radio.
+    </p>
+    <p>
+        And <strong>radio by radio</strong>, from each one's own sheet: <em>do not record this
+        radio</em>. This catches the cases detection cannot see — a station that announces a
+        title without ever changing it passes the test and yet splits nothing. The change takes
+        effect on the next playback.
+    </p>
+</section>
+
+<section>
+    <h2>Deciding</h2>
+    <p>
+        Every recorded track is offered to you by a notification, with its artwork:
+        <strong>Keep</strong> or <strong>Discard</strong>, without opening a window. If you let
+        it pass, the track stays in the pending list.
+    </p>
+    <p>
+        The <strong>Recordings</strong> window shows the whole list on a large surface, grouped
+        by station, so you can decide in batches. Several tracks can be selected at once.
+    </p>
+    <p>
+        Undecided tracks disappear after seven days, or when the list exceeds two gigabytes.
+        <strong>The ones you have kept are never deleted.</strong>
+    </p>
+</section>
+
+<section>
+    <h2>Rating a track</h2>
+    <p>
+        One to five stars, while playing from the player panel, or afterwards in the Recordings
+        window. Clicking the current star again clears the rating.
+    </p>
+    <p>
+        The rating is written <em>into the file</em>, and shows up in most players — foobar2000,
+        MusicBee, Kodi, Plex. Apple Music ignores that field, so Kodama also writes the rating
+        out in words in the Comments, where it stays visible.
+    </p>
+</section>
+
+<section>
+    <h2>Where the files are</h2>
+    <p>
+        In <code>~/Library/Application Support/Kodama/</code>: the stations in plain text,
+        their images, the pending list. Kept tracks go to the folder of your choice, which is
+        configurable — changing that folder does not move what is already in it.
+    </p>
+    <p>
+        No index, no database: the folder <em>is</em> the library. Move, rename or delete in
+        the Finder, and Kodama will read the folder again.
+    </p>
+</section>
+
+<section>
+    <h2>Taking your stations with you</h2>
+    <p>
+        The menu offers to export your stations to a <code>.kodama</code> file — JSON that
+        carries the images too. On import, you choose whether to add to your list or replace
+        it. Duplicates are discarded.
+    </p>
+</section>
+
+<section>
+    <h2>Updates</h2>
+    <p>
+        Kodama checks for new versions and offers to install them. “Check for updates…” in the
+        menu forces an immediate check.
+    </p>
+</section>
+
+<section>
+    <h2>If something goes wrong</h2>
+    <p>
+        Reports go
+        <a href="https://github.com/steveoctets/kodama/issues/new/choose">on GitHub</a>. Give
+        the version of Kodama, the version of macOS and the station concerned: many problems
+        come from the station rather than the application, and those three lines save a round
+        trip.
+    </p>
+</section>
+
+</div>
+
+<footer>
+    <p><a href="https://steveoctets.github.io/en/">Steve Octets</a></p>
+    <p><a href="index.html">Kodama</a><a href="versions.html">Release notes</a><a href="https://github.com/steveoctets/kodama/issues">Support</a><a href="https://ko-fi.com/steveoctets">Donate</a></p>
+    <p class="langues"><a href="../guide.html" onclick="try{localStorage.setItem('langue','fr')}catch(e){}">FR</a> · <strong>EN</strong></p>
+</footer>
+
+<script>
+// La langue du visiteur, une fois pour toutes.
+//
+// Le choix explicite l'emporte et se souvient ; à défaut, on suit le navigateur. La page
+// française est le contenu, pas une page de redirection : un robot qui n'exécute pas ce
+// script voit du vrai texte, et le hreflang ci-dessus lui dit où trouver l'autre version.
+(function () {
+    var choix = null;
+    try { choix = localStorage.getItem('langue'); } catch (e) {}
+    var ici = document.documentElement.lang;
+    var voulue = choix || (navigator.language || 'en').slice(0, 2).toLowerCase();
+    if (voulue !== 'fr') { voulue = 'en'; }
+    if (voulue === ici) { return; }
+    var autre = document.querySelector('link[rel=alternate][hreflang=' + voulue + ']');
+    if (autre) { location.replace(autre.href); }
+})();
+</script>
+
+</body>
+</html>

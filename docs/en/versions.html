@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Release notes — Kodama</title>
+<meta name="description" content="What each version of Kodama brought.">
+<link rel="icon" href="../images/icone.png">
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" hreflang="fr" href="https://steveoctets.github.io/kodama/versions.html">
+<link rel="alternate" hreflang="en" href="https://steveoctets.github.io/kodama/en/versions.html">
+<link rel="alternate" hreflang="x-default" href="https://steveoctets.github.io/kodama/en/versions.html">
+</head>
+<body>
+
+<div class="contenu">
+<nav class="retour"><a href="index.html">← Kodama</a></nav>
+
+<header style="text-align:left; padding:32px 0 8px;">
+    <h1 style="font-size:38px;">Release notes</h1>
+</header>
+
+<section style="border-top:none; padding-top:8px;">
+    <p>
+        Every version downloads and installs the next one by itself. The archives of all
+        versions remain available on
+        <a href="https://github.com/steveoctets/kodama/releases">GitHub</a>.
+    </p>
+</section>
+
+<section>
+    <h2>1.3.2</h2>
+<ul>
+    <li><strong>A support link</strong> in the “About” panel, for anyone who feels like buying
+    a coffee. Nothing else changes.</li>
+</ul>
+</section>
+
+<section>
+    <h2>1.3.1</h2>
+<ul>
+    <li><strong>The “About” panel</strong> is now the same whether it is opened from the menu
+    bar or from the application menu.</li>
+</ul>
+</section>
+
+<section>
+    <h2>1.3</h2>
+<ul>
+    <li><strong>A right-click on the menu bar icon</strong> opens the window. Left-clicking
+    opens the menu, as before.</li>
+</ul>
+</section>
+
+<section>
+    <h2>1.2</h2>
+<ul>
+    <li><strong>⌃⌥⌘R opens the window</strong>, wherever the cursor is: the shortcut is
+    system-wide, unlike the menu's ⌘O.</li>
+
+    <li><strong>The shortcut can be changed</strong> in Settings, under <em>Keyboard</em>. Esc
+    leaves none.</li>
+</ul>
+</section>
+
+<section>
+    <h2>1.1</h2>
+<ul>
+    <li><strong>The site is now at
+    <a href="https://steveoctets.github.io/kodama/">steveoctets.github.io</a></strong>, and
+    that is where this release looks for updates.</li>
+
+    <li><strong>An “About” entry</strong> in the menu: the installed version, and a link to
+    the site.</li>
+</ul>
+</section>
+
+<section>
+    <h2>1.0</h2>
+<ul>
+    <li><strong>Search among fifty-eight thousand radios</strong>, in the public
+    <a href="https://www.radio-browser.info">radio-browser.info</a> directory: by name, by
+    country or by genre. A button on each result queries the station and says whether it
+    broadcasts its titles, and so whether Kodama will be able to record it.</li>
+
+    <li><strong>Detection of recordable radios reads the stream</strong> until it gets a real
+    title, rather than trusting a header.</li>
+
+    <li><strong>Recording can be turned off for one radio</strong>, from its own sheet.</li>
+
+    <li><strong>The pending list disappears</strong> when the station being played will produce
+    no tracks.</li>
+
+    <li><strong>Updates say what they bring</strong>: this very window.</li>
+</ul>
+<p>
+    Fix: editing a stopped radio then starting it again replayed the old version, recording
+    setting included.
+</p>
+</section>
+
+<section>
+    <h2>0.10</h2>
+<ul>
+    <li><strong>Launch at login.</strong> Kodama can now start when you log in, from its
+    Settings. It sits in the menu bar, playing nothing.</li>
+</ul>
+<p>The switch reads the actual state held by macOS rather than a copy of it: turning Kodama off
+from System Settings → General → Login Items shows up straight away in the app.</p>
+</section>
+
+<section>
+    <h2>0.9</h2>
+<p>The first public release.</p>
+<ul>
+    <li><strong>Ten stations to start with</strong>, installed on first launch — ambient,
+    chillout, electronica, downtempo. All of them broadcast track titles, so recording works.</li>
+    <li><strong>Automatic updates.</strong> Kodama tells you about new versions and installs
+    them.</li>
+    <li><strong>English and French interface</strong>, following the system language.</li>
+    <li><strong>Configurable user agent</strong>: some stations only open their stream to an
+    agent they recognise.</li>
+</ul>
+<p>Universal binary, Apple silicon and Intel. Signed and notarised by Apple.</p>
+</section>
+
+</div>
+
+<footer>
+    <p><a href="https://steveoctets.github.io/en/">Steve Octets</a></p>
+    <p><a href="index.html">Kodama</a><a href="guide.html">Guide</a><a href="https://github.com/steveoctets/kodama/issues">Support</a><a href="https://ko-fi.com/steveoctets">Donate</a></p>
+    <p class="langues"><a href="../versions.html" onclick="try{localStorage.setItem('langue','fr')}catch(e){}">FR</a> · <strong>EN</strong></p>
+</footer>
+
+<script>
+// La langue du visiteur, une fois pour toutes.
+//
+// Le choix explicite l'emporte et se souvient ; à défaut, on suit le navigateur. La page
+// française est le contenu, pas une page de redirection : un robot qui n'exécute pas ce
+// script voit du vrai texte, et le hreflang ci-dessus lui dit où trouver l'autre version.
+(function () {
+    var choix = null;
+    try { choix = localStorage.getItem('langue'); } catch (e) {}
+    var ici = document.documentElement.lang;
+    var voulue = choix || (navigator.language || 'en').slice(0, 2).toLowerCase();
+    if (voulue !== 'fr') { voulue = 'en'; }
+    if (voulue === ici) { return; }
+    var autre = document.querySelector('link[rel=alternate][hreflang=' + voulue + ']');
+    if (autre) { location.replace(autre.href); }
+})();
+</script>
+
+</body>
+</html>

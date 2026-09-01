@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kodama — web radio streaming for macOS</title>
+<meta name="description" content="Kodama plays your web radios from the menu bar, records the tracks they broadcast, and lets you choose which ones to keep.">
+<link rel="icon" href="../images/icone.png">
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" hreflang="fr" href="https://steveoctets.github.io/kodama/">
+<link rel="alternate" hreflang="en" href="https://steveoctets.github.io/kodama/en/">
+<link rel="alternate" hreflang="x-default" href="https://steveoctets.github.io/kodama/en/">
+</head>
+<body>
+
+<header>
+    <img class="icone" src="../images/icone.png" alt="Kodama's icon: the hiragana ko, extended by sound waves">
+    <h1>Kodama</h1>
+    <p class="kana">こだま — “echo”</p>
+    <p class="accroche">
+        A web radio streaming application for the macOS menu bar. It plays your stations,
+        records the tracks they broadcast, and lets you choose which ones to keep.
+    </p>
+    <a class="telecharger" href="https://github.com/steveoctets/kodama/releases/latest/download/Kodama-1.3.2.zip">
+        Download Kodama 1.3.2
+    </a>
+    <p class="dessous">
+        macOS 14 or later · Apple silicon and Intel · 5.0 MB<br>
+        Signed and notarised by Apple
+    </p>
+    <p class="dessous compteur" id="compteur" hidden></p>
+</header>
+
+<div class="contenu">
+
+<section>
+    <div class="trois">
+        <div>
+            <h3>In the menu bar</h3>
+            <p>What's playing, the list of stations, one click to listen. The keyboard's
+            media keys change station.</p>
+        </div>
+        <div>
+            <h3>Split into tracks</h3>
+            <p>The title arrives in the stream at the very point where the track begins.
+            The cut lands on a frame boundary — no offset to correct.</p>
+        </div>
+        <div>
+            <h3>Keep the tracks you choose</h3>
+            <p>Every recorded track is offered to you by a notification. Keep, or discard.
+            Nothing piles up without your say-so.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>What happens while it plays</h2>
+    <figure>
+        <img class="native" src="../images/en/fenetre.jpg" alt="Kodama's window: stations on the left, the player on the right with the artwork, the current title and the recording timer">
+        <figcaption>Stations on the left, the player on the right — artwork, title, recording timer and rating.</figcaption>
+    </figure>
+    <p>
+        The stream is read once, and the bytes received go to disk exactly as they came: no
+        re-encoding, so the station's exact quality. Files carry artwork — the one the station
+        announces, or the image you gave the radio.
+    </p>
+    <p>
+        Tracks are rated from one to five stars, while playing or afterwards. The rating goes
+        into the file itself.
+    </p>
+    <p>
+        Any radio can be excluded from recording, from its own sheet — useful for those that
+        announce a title without ever changing it, which no detection can catch out.
+    </p>
+</section>
+
+<section>
+    <h2>Everything is driven from the menu bar</h2>
+    <figure>
+        <img class="etroite" src="../images/en/menulet.jpg" alt="Kodama's menu open, showing the current title and the list of stations">
+        <figcaption>Kodama does not occupy the Dock. It waits in the menu bar.</figcaption>
+    </figure>
+</section>
+
+<section>
+    <h2>One key, and there it is</h2>
+    <p>
+        <strong>⌃⌥⌘R</strong> opens Kodama's window wherever you are — the shortcut is
+        system-wide, and can be changed in Settings. A <strong>right-click on the icon</strong>
+        gets you there too, without going through the menu.
+    </p>
+</section>
+
+<section>
+    <h2>It is waiting when you wake up</h2>
+    <p>
+        Kodama can launch at login and settle into the menu bar, silent, ready. It is a
+        setting, not an imposition: it plays nothing until you ask it to.
+    </p>
+</section>
+
+<section>
+    <h2>Fifty-eight thousand others</h2>
+    <figure>
+        <img class="native" src="../images/en/recherche.jpg" alt="Kodama's search: the Canada filter, a list of stations with their thumbnails, and for each one a Test button or the green Recordable label">
+        <figcaption>Canadian stations. Two have already answered the test: they broadcast their titles.</figcaption>
+    </figure>
+    <p>
+        Kodama searches <a href="https://www.radio-browser.info">radio-browser.info</a>, the
+        public directory of web radios: by name, by country, by genre. What Kodama adds is the
+        question that concerns it — <strong>does this station broadcast its titles?</strong>
+        The directory does not say; a button on each result asks the station itself, and
+        answers before you adopt it.
+    </p>
+    <p>
+        Streams Kodama cannot read do not appear: promising playback that would fail does
+        nobody any good.
+    </p>
+</section>
+
+<section>
+    <h2>Ten stations to start with</h2>
+    <p>
+        Kodama arrives with ten radios chosen for background listening — ambient, chillout,
+        electro, downtempo — all from <a href="https://somafm.com">SomaFM</a>, independent and
+        ad-free.
+    </p>
+    <p>
+        They share something that has nothing to do with taste: <strong>they all broadcast
+        their titles</strong>. A radio that announces nothing is perfectly listenable, but
+        cannot be recorded — and that only shows in use. You can of course add your own.
+    </p>
+</section>
+
+<section>
+    <h2>What you can set</h2>
+    <figure>
+        <div class="deux-colonnes">
+            <img src="../images/en/reglages-1.jpg" alt="Kodama's settings: recording, splitting, folder for kept tracks">
+            <img src="../images/en/reglages-2.jpg" alt="Kodama's settings: pending list, notifications, network agent">
+        </div>
+        <figcaption>Below the minimum duration, it is a jingle: the track is discarded.</figcaption>
+    </figure>
+    <p>
+        The splitting thresholds, the folder kept tracks go to, how long the pending list is
+        held, the notifications. Kodama can also just play the radio, recording nothing.
+    </p>
+</section>
+
+<section>
+    <h2>Your files are yours</h2>
+    <p>
+        The folder <em>is</em> the database: no index beside it, metadata lives in the files'
+        own tags, and everything can be handled in the Finder. No account is asked for.
+    </p>
+    <p>
+        Nothing leaves your machine, with two exceptions, both visible: the searches you run in
+        the directory, and — <strong>only if you turn it on in Settings</strong> — reporting
+        what you listen to back to radio-browser.info, which feeds its ranking. That setting is
+        off by default.
+    </p>
+    <div class="note" id="limites">
+        <p>
+            <strong>What Kodama does not do.</strong> Radios that do not announce their titles
+            can be listened to but not recorded. HLS streams are not supported: MP3 and AAC
+            only. No Chromecast — AirPlay takes its place.
+        </p>
+    </div>
+    <p><a href="guide.html">Read the guide →</a></p>
+</section>
+
+<section id="support">
+    <h2>A problem, an idea?</h2>
+    <p>
+        Reports go on GitHub. Two forms guide you: one for what does not work, one for what is
+        missing. A few questions are asked — version, station concerned — because they nearly
+        always save a round trip.
+    </p>
+    <p>
+        <a class="bouton-second" href="https://github.com/steveoctets/kodama/issues/new/choose">
+            Report a problem
+        </a>
+        <a class="bouton-second" href="https://github.com/steveoctets/kodama/issues">
+            See the reports
+        </a>
+    </p>
+    <p style="font-size:15px; color:var(--encre-douce);">
+        A GitHub account is needed to write, but not to read.
+    </p>
+</section>
+
+</div>
+
+<footer>
+    <p><a href="https://steveoctets.github.io/en/">Steve Octets</a></p>
+    <p>
+        <a href="https://github.com/steveoctets/kodama/releases">All versions</a>
+        <a href="guide.html">Guide</a>
+        <a href="versions.html">Release notes</a>
+        <a href="https://github.com/steveoctets/kodama/issues">Support</a><a href="https://ko-fi.com/steveoctets">Donate</a>
+    </p>
+    <p class="langues"><a href="../" onclick="try{localStorage.setItem('langue','fr')}catch(e){}">FR</a> · <strong>EN</strong></p>
+</footer>
+
+<script>
+// Le nombre de téléchargements, demandé à GitHub. En cas d'échec — hors ligne,
+// quota d'appels dépassé — on n'affiche rien : mieux vaut un silence qu'un
+// message d'erreur sur une page de présentation.
+fetch('https://api.github.com/repos/steveoctets/kodama/releases')
+    .then(reponse => reponse.ok ? reponse.json() : Promise.reject())
+    .then(versions => {
+        const total = versions.reduce((somme, version) =>
+            somme + version.assets.reduce((n, fichier) => n + fichier.download_count, 0), 0);
+        if (total < 1) return;
+        const element = document.getElementById('compteur');
+        element.textContent = total.toLocaleString(document.documentElement.lang)
+            + (total > 1 ? ' downloads' : ' download');
+        element.hidden = false;
+    })
+    .catch(() => {});
+</script>
+
+<script>
+// La langue du visiteur, une fois pour toutes.
+//
+// Le choix explicite l'emporte et se souvient ; à défaut, on suit le navigateur. La page
+// française est le contenu, pas une page de redirection : un robot qui n'exécute pas ce
+// script voit du vrai texte, et le hreflang ci-dessus lui dit où trouver l'autre version.
+(function () {
+    var choix = null;
+    try { choix = localStorage.getItem('langue'); } catch (e) {}
+    var ici = document.documentElement.lang;
+    var voulue = choix || (navigator.language || 'en').slice(0, 2).toLowerCase();
+    if (voulue !== 'fr') { voulue = 'en'; }
+    if (voulue === ici) { return; }
+    var autre = document.querySelector('link[rel=alternate][hreflang=' + voulue + ']');
+    if (autre) { location.replace(autre.href); }
+})();
+</script>
+
+</body>
+</html>
