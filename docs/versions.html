@@ -29,6 +29,24 @@
 </section>
 
 <section>
+    <h2>1.5</h2>
+<ul>
+    <li><strong>Un flux qui s'enlise est détecté</strong> — silence, ou débit tombé sous la
+    moitié du temps réel. Kodama coupe et se reconnecte au lieu de rester sur une lecture
+    hachée. Le délai de silence se règle.</li>
+    <li><strong>Kodama renonce et le dit</strong> quand une radio reste injoignable, au lieu de
+    réessayer sans fin. Le délai se règle, zéro pour ne jamais renoncer.</li>
+    <li><strong>Le motif d'une coupure s'affiche</strong> : serveur introuvable, connexion
+    refusée, certificat refusé, code de la station. Les pannes qui ne s'arrangeront pas d'elles-mêmes
+    arrêtent tout de suite, et l'écran l'annonce au lieu d'une reconnexion perpétuelle.</li>
+    <li><strong>Un journal</strong>, sous <code>~/Library/Logs/Kodama/</code>, ouvrable depuis le
+    menu. C'est ce qu'on joint à un signalement.</li>
+    <li>Une station qui n'annonce pas ses titres ne reste plus affichée comme « Reconnexion… »
+    une fois le son revenu.</li>
+</ul>
+</section>
+
+<section>
     <h2>1.4</h2>
 <ul>
     <li><strong>Un morceau enregistré porte le nom de sa radio, la date et l'heure</strong> —

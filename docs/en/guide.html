@@ -181,6 +181,31 @@
 </section>
 
 <section>
+    <h2>When a station stops answering</h2>
+    <p>
+        Kodama watches the stream it receives. Silence, or a rate too low to be listened to,
+        ends the connection and opens a new one — rather than leaving you with choppy playback.
+        Attempts space out, and <strong>the reason is shown</strong>: server not found,
+        connection refused, the status code the station returned.
+    </p>
+    <p>
+        A failure that will not fix itself — a wrong address, a station that is gone — stops
+        right away instead of retrying forever. The play button starts it again whenever you
+        want.
+    </p>
+    <p>
+        Two settings, under <em>Network</em>: the <strong>silence before cutting</strong>
+        (fifteen seconds by default) and <strong>giving up</strong> (five minutes; zero never
+        gives up).
+    </p>
+    <p>
+        <strong>📁 Open Log</strong>, at the bottom of the menu, leads to
+        <code>~/Library/Logs/Kodama/</code>: connections, dropouts and their reasons. That is
+        what to attach to a report.
+    </p>
+</section>
+
+<section>
     <h2>Updates</h2>
     <p>
         Kodama checks for new versions and offers to install them. “Check for updates…” in the

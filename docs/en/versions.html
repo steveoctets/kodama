@@ -29,6 +29,24 @@
 </section>
 
 <section>
+    <h2>1.5</h2>
+<ul>
+    <li><strong>A stalling stream is now detected</strong> — silence, or a rate fallen below
+    half of real time. Kodama cuts and reconnects instead of sitting on choppy playback. The
+    silence delay is configurable.</li>
+    <li><strong>Kodama gives up and says so</strong> when a station stays unreachable, instead
+    of retrying forever. The delay is configurable; zero never gives up.</li>
+    <li><strong>The reason for a dropout is shown</strong>: server not found, connection
+    refused, certificate refused, the station's status code. Failures that will not fix
+    themselves stop right away, and the screen says so rather than reconnecting forever.</li>
+    <li><strong>A log</strong>, under <code>~/Library/Logs/Kodama/</code>, opened from the menu.
+    That is what to attach to a report.</li>
+    <li>A station that announces no titles no longer stays shown as “Reconnecting…” once the
+    sound is back.</li>
+</ul>
+</section>
+
+<section>
     <h2>1.4</h2>
 <ul>
     <li><strong>A recorded track is named after its station, the date and the time</strong> —
